@@ -9,5 +9,8 @@ module.exports = {
       host: process.env.HOST || 'localhost',
       storage: './tabtracker.sqlite'
     }
+  },
+  authentication: {
+    jwtSecret: process.envJWT_SECRET || 'secret'
   }
 }
